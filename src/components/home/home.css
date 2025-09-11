@@ -52,6 +52,7 @@
 .home__description {
     margin-bottom: var(--mb-3);
     max-width: 400px;
+    text-align: justify;
 }
 
 .home__img {
