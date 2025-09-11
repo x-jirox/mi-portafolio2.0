@@ -8,28 +8,24 @@ import { ReactComponent as Files } from "../../assets/files.svg";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">
-        {" "}
-        About Me
-        <span className="section__subtitle">My Introduction</span>
-        <div className="about__container container grid">
-          <img src={AboutImg} alt="" className="about__img" />
-          <div className="about__data">
-            <Info />
-            <p className="about__description">
-              Tecnólogo en Desarrollo de Software con experiencia en desarrollo
-              web usando Angular, TypeScript, JavaScript, HTML y CSS.
-              Familiarizado con metodologías ágiles y buenas prácticas de
-              desarrollo.
-            </p>
-            <a download="" href={CV} className="button button-flex">
-              {" "}
-              Download CV
-              <Files />
-            </a>
-          </div>
+      <h2 className="section__title">About Me</h2>
+      <span className="section__subtitle">My Introduction</span>
+      <div className="about__container container grid">
+        <img src={AboutImg} alt="" className="about__img" />
+        <div className="about__data">
+          <Info />
+          <p className="about__description">
+            Tecnólogo en Desarrollo de Software con experiencia en desarrollo
+            web usando Angular, TypeScript, JavaScript, HTML y CSS.
+            Familiarizado con metodologías ágiles y buenas prácticas de
+            desarrollo.
+          </p>
+          <a download="" href={CV} className="button button-flex">
+            Download CV
+            <Files />
+          </a>
         </div>
-      </h2>
+      </div>
     </section>
   );
 };
