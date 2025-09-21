@@ -1,4 +1,5 @@
 import React from "react";
+import "./contact.css"
 import { ReactComponent as Send } from "../../assets/send.svg";
 
 const Contact = () => {
