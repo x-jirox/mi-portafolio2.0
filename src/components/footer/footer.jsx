@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css"
+import "./footer.css";
 
 const Footer = () => {
   return (
@@ -9,40 +9,41 @@ const Footer = () => {
 
         <ul className="footer__list">
           <li>
-            <a href="#about" className="footer__link">About</a>
+            <a href="#about" className="footer__link">
+              About
+            </a>
           </li>
           <li>
-            <a href="#portfolio" className="footer__link">Projects</a>
+            <a href="#portfolio" className="footer__link">
+              Projects
+            </a>
           </li>
-
         </ul>
 
         <div className="footer__social">
-                  <a
-        href="www.linkedin.com/in/lenin-correa-b496b5272"
-        className="footer__social-icon"
-        target="_blank"
-      >
-        <i class="uil uil-linkedin"></i>
-      </a>
-      <a
-        href="https://github.com/x-jirox"
-        className="footer__social-icon"
-        target="_blank"
-      >
-        <i class="uil uil-github"></i>
-      </a>
-      <a
-        href="https://www.instagram.com/ss.jiro/"
-        className="footer__social-icon"
-        target="_blank"
-      >
-        <i class="uil uil-instagram-alt"></i>
-      </a>
+          <a
+            href="www.linkedin.com/in/lenin-correa-b496b5272"
+            className="footer__social-link"
+            target="_blank"
+          >
+            <i class="uil uil-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/x-jirox"
+            className="footer__social-link"
+            target="_blank"
+          >
+            <i class="uil uil-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ss.jiro/"
+            className="footer__social-link"
+            target="_blank"
+          >
+            <i class="uil uil-instagram-alt"></i>
+          </a>
         </div>
-        <span className="footer__copy">
-            &#169; All rigths reserved
-        </span>
+        <span className="footer__copy">&#169; All rigths reserved</span>
       </div>
     </footer>
   );
