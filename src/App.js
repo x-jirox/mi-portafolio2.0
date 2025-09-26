@@ -7,20 +7,22 @@ import Services from './components/services/services';
 import Qualification from './components/qualification/qualification';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
+import Scrollup from './components/scrollup/scrollup';
 
 function App() {
   return (
     <>
       <Header />
       <main className='main'>
-              <Home/>
-              <About/>
-              <Skills/>
-              <Services/>
-              <Qualification/>
-              <Contact/>
-              <Footer/>
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Contact />
       </main>
+      <Footer />
+      <Scrollup />
     </>
   );
 }
