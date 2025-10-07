@@ -84,6 +84,7 @@
 
 .home__scroll {
     margin-left: 9.25rem;
+    
 }
 
 .wheel {
@@ -110,6 +111,7 @@
 .home__scroll-arrow {
     font-size: 1.25rem;
     color: var(--title-color);
+    
 }
 
 

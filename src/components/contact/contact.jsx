@@ -17,23 +17,25 @@ const Contact = () => {
 
   return (
     <section className="contact sectuin" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact me</span>
+      <h2 className="section__title">Ponte en Contacto</h2>
+      <span className="section__subtitle">Comunicate</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">Hablame</h3>
 
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-envelope contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@gmail.com</span>
+              <span className="contact__card-data">
+                correalenin045@gmail.com
+              </span>
               <a
                 href="mailto:correalenin045@gmail.com"
                 className="contact__button"
               >
-                Write me
+                Escribeme
                 <i className="uil uil-arrow-right contact__button-icon"></i>
               </a>
             </div>
@@ -41,12 +43,12 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">999-888-777</span>
+              <span className="contact__card-data">+593-991530112</span>
               <a
                 href="https://api.whatsapp.com/send?phone=593991530112&text=Hola,%20quiero%20más%20información"
                 className="contact__button"
               >
-                Write me
+                Escribeme
                 <i className="uil uil-arrow-right contact__button-icon"></i>
               </a>
             </div>
@@ -54,41 +56,41 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">Describeme tu proyecto</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
+              <label className="contact__form-tag">Nombre</label>
               <input
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Incert ypur name"
+                placeholder="Ingresa tu nombre"
               />
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag">Mail</label>
+              <label className="contact__form-tag">Email</label>
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Incert your email"
+                placeholder="Ingresa tu correo"
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
+              <label className="contact__form-tag">Proyecto</label>
               <textarea
                 name="project"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Write your project"
+                placeholder="Escribeme tu proyecto..."
               ></textarea>
             </div>
             <button className="button button--flex">
-              Send message
+              Enviar Mensaje
               <Send />
             </button>
           </form>

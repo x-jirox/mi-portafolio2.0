@@ -49,8 +49,23 @@
 }
 
 /*change background*/
-.scroll-header{
+.scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Desktop: botón a la derecha del header */
+.dark-toggle {
+
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--title-color);
+    transition: color 0.5s;
+}
+
+.dark-toggle:hover {
+    color: var(--title-color-dark);
 }
 
 /*BREAKPOINTS*/
@@ -96,7 +111,7 @@
         position: absolute;
         right: 1.3rem;
         bottom: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         cursor: pointer;
         color: var(--title-color);
     }
@@ -106,7 +121,7 @@
     }
 
     .nav__toggle {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
         cursor: pointer;
     }
 
@@ -114,6 +129,10 @@
     .nav__close,
     .nav__toggle {
         display: block;
+    }
+
+    .nav__logo {
+        display: none;
     }
 }
 
@@ -125,5 +144,9 @@
 
     .nav__list {
         column-gap: 0;
+    }
+
+    .nav__logo {
+        display: none;
     }
 }
