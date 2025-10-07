@@ -4,7 +4,7 @@ import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/CV.pdf";
 import Info from "./info";
 import { ReactComponent as Files } from "../../assets/files.svg";
-
+import Qualification from "./qualification";
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -26,6 +26,7 @@ const About = () => {
           </a>
         </div>
       </div>
+      <Qualification />
     </section>
   );
 };
