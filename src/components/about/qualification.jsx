@@ -9,8 +9,8 @@ const Qualification = () => {
 
   return (
     <section className="qualification section">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My persona journey</span>
+      <h2 className="section__title">Cualificacion</h2>
+      <span className="section__subtitle">Mi viaje personal</span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">
@@ -23,7 +23,7 @@ const Qualification = () => {
             onClick={() => toggleTab(1)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            Education
+            Educacion
           </div>
 
           <div
@@ -35,7 +35,7 @@ const Qualification = () => {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
-            Experience
+            Experiencia
           </div>
         </div>
 
@@ -49,12 +49,12 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">CIencias Basicas</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - Alicia Loza meneses
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>2017 - 2020
                 </div>
               </div>
               <div>
@@ -70,24 +70,24 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Art Director</h3>
+                <h3 className="qualification__title">Desarrollador de Software</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - Instituto Superior Tecnologico del Azuay
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2019 - 2020
+                  <i className="uil uil-calendar-alt"></i>2021 - 2024
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Develepment</h3>
+                <h3 className="qualification__title">Diseño Web</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - FreeCodeCamp
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2018 - 2019
+                  <i className="uil uil-calendar-alt"></i> 2025
                 </div>
               </div>
               <div>
@@ -103,12 +103,12 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">UX designer</h3>
+                <h3 className="qualification__title">Fundamentos C# Microsoft</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - FreecodeCamp
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2017 - 2018
+                  <i className="uil uil-calendar-alt"></i>2025
                 </div>
               </div>
             </div>
@@ -123,12 +123,12 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Product designer</h3>
+                <h3 className="qualification__title">Aplicaciones de Escritorio con Spring Boot</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - Freelancer
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2021 - Present
+                  <i className="uil uil-calendar-alt"></i>2024
                 </div>
               </div>
               <div>
@@ -144,24 +144,24 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Art Director</h3>
+                <h3 className="qualification__title">Desarrollo Web con Angular</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - Freelancer
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2019 - 2020
+                  <i className="uil uil-calendar-alt"></i>2024
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Develepment</h3>
+                <h3 className="qualification__title">Desarrollo Web con Astro</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - Freelancer
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2018 - 2019
+                  <i className="uil uil-calendar-alt"></i>2025
                 </div>
               </div>
               <div>
@@ -177,12 +177,12 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">UX designer</h3>
+                <h3 className="qualification__title">Desarrollo Web con React</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Ecuador - Freelancer
                 </span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>2017 - 2018
+                  <i className="uil uil-calendar-alt"></i>2025
                 </div>
               </div>
             </div>

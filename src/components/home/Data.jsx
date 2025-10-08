@@ -10,13 +10,13 @@ const Data = () => {
         Lenin Correa
         <Hand />
       </h1>
-      <h3 className="home__subtitle">Software Developer</h3>
+      <h3 className="home__subtitle">Desarrollador de Software</h3>
       <p className="home__description">
         Enfocado en el desarrollo de aplicaciones web interactivas, siempre
         aprendiendo y enfrentando nuevos retos.
       </p>
       <a href="#contact" className="button button--flex">
-        Say Hello
+        Contactame
         <Send />
       </a>
     </div>
