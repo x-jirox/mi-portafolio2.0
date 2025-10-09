@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./services.css";
 
-const Services = () => {
+const Servicios = () => {
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
     setToggleState(index);
@@ -9,19 +9,20 @@ const Services = () => {
 
   return (
     <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What i offer</span>
+      <h2 className="section__title">Servicios</h2>
+      <span className="section__subtitle">Lo que puedo ofrecer</span>
 
       <div className="services__container container grid">
+        {/* Servicio 1 */}
         <div className="services__content">
           <div>
-            <i class="uil uil-web-grid services__icon"></i>
+            <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Design
+              Desarrollo <br /> de Productos
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTab(1)}>
-            View More
+            Ver más
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
           <div
@@ -36,54 +37,39 @@ const Services = () => {
                 onClick={() => toggleTab(0)}
                 className="uil uil-times services__modal-close"
               ></i>
-              <h3 className="services__modal-title">Product Design</h3>
+              <h3 className="services__modal-title">Desarrollo de Productos</h3>
               <p className="services__modal-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quod.
+                Desarrollo de interfaces web simples con Angular y React.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Interfaces responsivas</p>
                 </li>
-
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Componentes reutilizables</p>
                 </li>
-
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Integración con bases de datos</p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
+        {/* Servicio 2 */}
         <div className="services__content">
           <div>
-            <i class="uil uil-arrow services__icon"></i>
+            <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
-              Ui/Ux <br />
-              Design
+              Diseño <br />
+              UI/UX
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTab(2)}>
-            View More
+            Ver más
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
           <div
@@ -98,54 +84,35 @@ const Services = () => {
                 onClick={() => toggleTab(0)}
                 className="uil uil-times services__modal-close"
               ></i>
-              <h3 className="services__modal-title">Ui/Ux Deesign</h3>
+              <h3 className="services__modal-title">Diseño UI/UX</h3>
               <p className="services__modal-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quod.
+                Interfaces intuitivas y fáciles de usar.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Flujo de usuario optimizado</p>
                 </li>
-
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Prototipos interactivos</p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
+        {/* Servicio 3 */}
         <div className="services__content">
           <div>
-            <i class="uil uil-edit services__icon"></i>
+            <i className="uil uil-edit services__icon"></i>
             <h3 className="services__title">
-              Visual <br />
-              Design
+              Diseño <br />
+              Visual
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTab(3)}>
-            View More
+            Ver más
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
           <div
@@ -160,38 +127,18 @@ const Services = () => {
                 onClick={() => toggleTab(0)}
                 className="uil uil-times services__modal-close"
               ></i>
-              <h3 className="services__modal-title">Visual Designer</h3>
+              <h3 className="services__modal-title">Diseño Visual</h3>
               <p className="services__modal-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quod.
+                Materiales gráficos coherentes y claros.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Banners y elementos gráficos</p>
                 </li>
-
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle service__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
+                  <p className="services__modal-info">Paletas y tipografía consistentes</p>
                 </li>
               </ul>
             </div>
@@ -202,4 +149,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Servicios;
