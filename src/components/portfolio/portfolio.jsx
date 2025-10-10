@@ -1,72 +1,200 @@
-import React from "react";
+import React, { useState } from "react";
 import "./portfolio.css";
+
 const Portfolio = () => {
+  const [toggleState, setToggleState] = useState(0);
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
   return (
     <section className="portfolio section" id="portfolio">
       <h2 className="section__title">Mi Portafolio</h2>
       <span className="section__subtitle">Mis proyectos</span>
-      <div class="carousel" mask>
-	<article>
-		<img src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-		<h2>The Cross</h2>
-		<div>
-			<p>The Cross is a central symbol of Easter, representing the crucifixion of Jesus Christ and his sacrifice for humanity. It serves as a reminder of suffering, love, and redemption, and is often displayed during Holy Week and Easter Sunday to honor the foundation of Christian faith.</p>
 
-			<a href="#">Read more</a>
-		</div>
-	</article>
+      <div className="portfolio__container container grid">
+        {/* Project 1 */}
+        <div className="projects__content">
+          <div>
+            <i className="uil uil-web-grid projects__icon"></i>
+            <h3 className="projects__title">
+              Desarrollo <br /> de Productos
+            </h3>
+          </div>
+          <span className="projects__button" onClick={() => toggleTab(1)}>
+            Ver más
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+          <div
+            className={
+              toggleState === 1
+                ? "projects__modal active-modal"
+                : "projects__modal"
+            }
+          >
+            <div className="projects__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times projects__modal-close"
+              ></i>
+              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
+              <p className="projects__modal-description">
+                Desarrollo de interfaces web simples con Angular y React.
+              </p>
+              <ul className="projects__modal-projects grid">
+                <li className="projects__modal-project">
+                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                  <p className="projects__modal-info">Interfaces responsivas</p>
+                </li>
+              </ul>
+                        <span className="projects__button">
+            git hub
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+                                  <span className="projects__button">
+            live demo
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+            </div>
+          </div>
+        </div>
 
-	<article>
-		<img src="https://images.pexels.com/photos/7168798/pexels-photo-7168798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="easter eggs" />
-		<h2>Easter Eggs</h2>
-		<div>
-			<p>Easter eggs are a colorful symbol of new life and rebirth, often decorated and hidden for festive hunts. The tradition comes from ancient spring rituals and was later adopted into Easter celebrations to represent the resurrection.</p>
+                <div className="projects__content">
+          <div>
+            <i className="uil uil-web-grid projects__icon"></i>
+            <h3 className="projects__title">
+              Desarrollo <br /> de Productos
+            </h3>
+          </div>
+          <span className="projects__button" onClick={() => toggleTab(1)}>
+            Ver más
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+          <div
+            className={
+              toggleState === 1
+                ? "projects__modal active-modal"
+                : "projects__modal"
+            }
+          >
+            <div className="projects__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times projects__modal-close"
+              ></i>
+              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
+              <p className="projects__modal-description">
+                Desarrollo de interfaces web simples con Angular y React.
+              </p>
+              <ul className="projects__modal-projects grid">
+                <li className="projects__modal-project">
+                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                  <p className="projects__modal-info">Interfaces responsivas</p>
+                </li>
+              </ul>
+                        <span className="projects__button">
+            git hub
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+                                  <span className="projects__button">
+            live demo
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+            </div>
+          </div>
+        </div>
 
-			<a href="#">Read more</a>
-		</div>
-	</article>
+                <div className="projects__content">
+          <div>
+            <i className="uil uil-web-grid projects__icon"></i>
+            <h3 className="projects__title">
+              Desarrollo <br /> de Productos
+            </h3>
+          </div>
+          <span className="projects__button" onClick={() => toggleTab(1)}>
+            Ver más
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+          <div
+            className={
+              toggleState === 1
+                ? "projects__modal active-modal"
+                : "projects__modal"
+            }
+          >
+            <div className="projects__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times projects__modal-close"
+              ></i>
+              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
+              <p className="projects__modal-description">
+                Desarrollo de interfaces web simples con Angular y React.
+              </p>
+              <ul className="projects__modal-projects grid">
+                <li className="projects__modal-project">
+                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                  <p className="projects__modal-info">Interfaces responsivas</p>
+                </li>
+              </ul>
+                        <span className="projects__button">
+            git hub
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+                                  <span className="projects__button">
+            live demo
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+            </div>
+          </div>
+        </div>
 
-	<article>
-		<img src="https://images.pexels.com/photos/4099179/pexels-photo-4099179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="hot cross buns" />
-		<h2>Hot Cross Buns</h2>
-		<div>
-			<p>Hot cross buns are sweet, spiced buns marked with a cross on top, traditionally eaten on Good Friday. They originated in England and symbolize the crucifixion, with the cross representing Jesus and the spices recalling burial traditions.</p>
+                <div className="projects__content">
+          <div>
+            <i className="uil uil-web-grid projects__icon"></i>
+            <h3 className="projects__title">
+              Desarrollo <br /> de Productos
+            </h3>
+          </div>
+          <span className="projects__button" onClick={() => toggleTab(1)}>
+            Ver más
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+          <div
+            className={
+              toggleState === 1
+                ? "projects__modal active-modal"
+                : "projects__modal"
+            }
+          >
+            <div className="projects__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times projects__modal-close"
+              ></i>
+              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
+              <p className="projects__modal-description">
+                Desarrollo de interfaces web simples con Angular y React.
+              </p>
+              <ul className="projects__modal-projects grid">
+                <li className="projects__modal-project">
+                  <i className="uil uil-check-circle projects__modal-icon"></i>
+                  <p className="projects__modal-info">Interfaces responsivas</p>
+                </li>
+              </ul>
+                        <span className="projects__button">
+            git hub
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+                                  <span className="projects__button">
+            live demo
+            <i className="uil uil-arrow-right projects__button-icon"></i>
+          </span>
+            </div>
+          </div>
+        </div>
 
-			<a href="#">Read more</a>
-		</div>
-	</article>
 
-	<article>
-		<img src="https://images.pexels.com/photos/5145/animal-easter-chick-chicken.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="easter chick" />
-		<h2>Easter Chick</h2>
-		<div>
-			<p>Easter chicks are a cheerful symbol of new life and beginnings, often seen alongside eggs in spring decorations. They represent birth and renewal, tying into the themes of Easter and the arrival of spring.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/2072158/pexels-photo-2072158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="easter bunny" />
-		<h2>Easter Bunnies</h2>
-		<div>
-			<p>Easter bunnies are a popular symbol of spring and new life, often seen delivering colorful eggs to children.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-	<article>
-		<img src="https://images.pexels.com/photos/12787666/pexels-photo-12787666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="crown of thorms" />
-		<h2>Crown of Thorns</h2>
-		<div>
-			<p>The Crown of Thorns symbolizes the suffering of Jesus before his crucifixion. It represents the pain he endured for humanity’s salvation and is a reminder of his sacrifice during Easter.</p>
-
-			<a href="#">Read more</a>
-		</div>
-	</article>
-
-</div>
+      </div>
     </section>
   );
 };
