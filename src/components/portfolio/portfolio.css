@@ -1,33 +1,52 @@
 .portfolio__container {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(3, 400px);
     justify-content: center;
     column-gap: 2rem;
 }
 
 .projects__content {
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--container-color);
-    padding: 3rem 0 2rem 3rem;
-    border: 2px solid var(--title-color);
-    border-radius: 1.25rem;
+  position: relative;
+  border: 1px solid var(--title-color);
+  border-radius: 1.25rem;
+  background-color: var(--container-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
 }
 
-.projects__icon {
-    display: block;
-    font-size: 2.5rem;
-    color: var(--tittle-color);
-    margin-bottom: var(--mb-1);
+/* Imagen superior ocupa mitad */
+.projects__image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.projects__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenido inferior */
+.projects__body {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projects__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
+    color: var(--title-color);
 }
 
 .projects__button {
-    color: var(--tittle-color);
+    color: var(--title-color-dark);
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;
@@ -122,46 +141,116 @@
     visibility: visible;
 }
 
-/*BREAKPOINTS*/
-/*for large devices*/
+.projects__modal-buttons {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  gap: 1rem;               /* espacio entre botones */
+  margin-top: 1.5rem;
+}
+
+.details__project__button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color-dark);
+  cursor: pointer;
+  border: 2px solid var(--text-color);
+  border-radius: 10rem;
+  padding: 5px 15px;
+  display: flex;           /* para alinear ícono y texto */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.details__project__button:hover {
+  color: var(--title-color);
+}
+
+
+/* ======== BREAKPOINTS ======== */
+
+/* for large devices */
 @media screen and (max-width: 992px) {
-    .portfolio__container {
-        grid-template-columns: repeat(3, 218px);
-    }
+  .portfolio__container {
+    grid-template-columns: repeat(3, 218px);
+  }
+
+  .projects__content {
+    height: 350px; /* un poco más baja */
+  }
 }
 
-/*for medium devices*/
+/* for medium devices */
 @media screen and (max-width: 768px) {
-    .portfolio__container {
-        grid-template-columns: repeat(1, 1fr); /*cambio x1  */    
-	}
+  .portfolio__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .projects__content {
-        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
-    }
+  .projects__content {
+    height: auto; /* que crezca según el contenido */
+  }
 
-    .projects__icon {
-        font-size: 1.5rem;
-    }
+  .projects__image-container {
+    height: 200px; /* imagen fija pero no tan grande */
+  }
+
+  .projects__body {
+    padding: 1rem;
+  }
+
+  .projects__title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .projects__button {
+    font-size: 0.875rem;
+    justify-content: center;
+  }
 }
 
+/* for small devices */
 @media screen and (max-width: 576px) {
-    .projects__modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
-    }
+  .projects__modal-content {
+    padding: 3rem 1.5rem 2rem;
+  }
 
-    .projects__modal-description {
-        padding: 0;
-    }
+  .projects__modal-description {
+    padding: 0;
+  }
+
+  .projects__content {
+    height: auto;
+  }
+
+  .projects__image-container {
+    height: 180px;
+  }
+
+  .projects__body {
+    padding: 1rem;
+  }
+
+  .projects__title {
+    font-size: 0.9rem;
+  }
 }
 
-/*for small devices*/
+/* for extra small devices */
 @media screen and (max-width: 350px) {
-    .projects__container {
-        grid-template-columns: max-content;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
 
-    .projects__content {
-        padding-right: 6rem;
-    }
+  .projects__image-container {
+    height: 150px;
+  }
+
+  .projects__body {
+    padding: 0.75rem;
+  }
+
+  .projects__title {
+    font-size: 0.85rem;
+  }
 }
