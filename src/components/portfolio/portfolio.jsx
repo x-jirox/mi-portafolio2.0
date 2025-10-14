@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import portafolioImg from "../../assets/projects/Portafolio.png";
 import "./portfolio.css";
 
 const Portfolio = () => {
@@ -6,6 +7,7 @@ const Portfolio = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
   return (
     <section className="portfolio section" id="portfolio">
       <h2 className="section__title">Mi Portafolio</h2>
@@ -14,16 +16,25 @@ const Portfolio = () => {
       <div className="portfolio__container container grid">
         {/* Project 1 */}
         <div className="projects__content">
-          <div>
-            <i className="uil uil-web-grid projects__icon"></i>
-            <h3 className="projects__title">
-              Desarrollo <br /> de Productos
-            </h3>
+          {/* Imagen superior */}
+          <div className="projects__image-container">
+            <img
+              src={portafolioImg}
+              alt="Proyecto 1"
+              className="projects__image"
+            />
           </div>
-          <span className="projects__button" onClick={() => toggleTab(1)}>
-            Ver más
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
+
+          <div className="projects__body">
+            <h3 className="projects__title">Portafolio 1.0</h3>
+
+            <span className="projects__button" onClick={() => toggleTab(1)}>
+              Ver más
+              <i className="uil uil-arrow-right projects__button-icon"></i>
+            </span>
+          </div>
+
+          {/* Modal */}
           <div
             className={
               toggleState === 1
@@ -36,9 +47,9 @@ const Portfolio = () => {
                 onClick={() => toggleTab(0)}
                 className="uil uil-times projects__modal-close"
               ></i>
-              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
+              <h3 className="projects__modal-title">Portafolio 1.0</h3>
               <p className="projects__modal-description">
-                Desarrollo de interfaces web simples con Angular y React.
+                Portafolio creado en angular 16 y desplegado en netlify.
               </p>
               <ul className="projects__modal-projects grid">
                 <li className="projects__modal-project">
@@ -46,154 +57,21 @@ const Portfolio = () => {
                   <p className="projects__modal-info">Interfaces responsivas</p>
                 </li>
               </ul>
-                        <span className="projects__button">
-            git hub
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-                                  <span className="projects__button">
-            live demo
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
+
+              <div className="projects__modal-buttons">
+                <div className="details__project__button">
+                  GitHub
+                  <i className="uil uil-github projects__button-icon"></i>
+                </div>
+
+                <div className="details__project__button">
+                  Live demo
+                  <i className="uil uil-link-h projects__button-icon"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-                <div className="projects__content">
-          <div>
-            <i className="uil uil-web-grid projects__icon"></i>
-            <h3 className="projects__title">
-              Desarrollo <br /> de Productos
-            </h3>
-          </div>
-          <span className="projects__button" onClick={() => toggleTab(1)}>
-            Ver más
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-          <div
-            className={
-              toggleState === 1
-                ? "projects__modal active-modal"
-                : "projects__modal"
-            }
-          >
-            <div className="projects__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times projects__modal-close"
-              ></i>
-              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
-              <p className="projects__modal-description">
-                Desarrollo de interfaces web simples con Angular y React.
-              </p>
-              <ul className="projects__modal-projects grid">
-                <li className="projects__modal-project">
-                  <i className="uil uil-check-circle projects__modal-icon"></i>
-                  <p className="projects__modal-info">Interfaces responsivas</p>
-                </li>
-              </ul>
-                        <span className="projects__button">
-            git hub
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-                                  <span className="projects__button">
-            live demo
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-            </div>
-          </div>
-        </div>
-
-                <div className="projects__content">
-          <div>
-            <i className="uil uil-web-grid projects__icon"></i>
-            <h3 className="projects__title">
-              Desarrollo <br /> de Productos
-            </h3>
-          </div>
-          <span className="projects__button" onClick={() => toggleTab(1)}>
-            Ver más
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-          <div
-            className={
-              toggleState === 1
-                ? "projects__modal active-modal"
-                : "projects__modal"
-            }
-          >
-            <div className="projects__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times projects__modal-close"
-              ></i>
-              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
-              <p className="projects__modal-description">
-                Desarrollo de interfaces web simples con Angular y React.
-              </p>
-              <ul className="projects__modal-projects grid">
-                <li className="projects__modal-project">
-                  <i className="uil uil-check-circle projects__modal-icon"></i>
-                  <p className="projects__modal-info">Interfaces responsivas</p>
-                </li>
-              </ul>
-                        <span className="projects__button">
-            git hub
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-                                  <span className="projects__button">
-            live demo
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-            </div>
-          </div>
-        </div>
-
-                <div className="projects__content">
-          <div>
-            <i className="uil uil-web-grid projects__icon"></i>
-            <h3 className="projects__title">
-              Desarrollo <br /> de Productos
-            </h3>
-          </div>
-          <span className="projects__button" onClick={() => toggleTab(1)}>
-            Ver más
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-          <div
-            className={
-              toggleState === 1
-                ? "projects__modal active-modal"
-                : "projects__modal"
-            }
-          >
-            <div className="projects__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times projects__modal-close"
-              ></i>
-              <h3 className="projects__modal-title">Desarrollo de Productos</h3>
-              <p className="projects__modal-description">
-                Desarrollo de interfaces web simples con Angular y React.
-              </p>
-              <ul className="projects__modal-projects grid">
-                <li className="projects__modal-project">
-                  <i className="uil uil-check-circle projects__modal-icon"></i>
-                  <p className="projects__modal-info">Interfaces responsivas</p>
-                </li>
-              </ul>
-                        <span className="projects__button">
-            git hub
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-                                  <span className="projects__button">
-            live demo
-            <i className="uil uil-arrow-right projects__button-icon"></i>
-          </span>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </section>
   );
