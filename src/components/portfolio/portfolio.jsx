@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import portafolioImg from "../../assets/projects/Portafolio.png";
+import summitticketsImg from "../../assets/projects/SummitTickets.png";
+import tallertrackImg from "../../assets/projects/TallerTrack.png";
 import "./portfolio.css";
 
 const Portfolio = () => {
@@ -59,15 +61,25 @@ const Portfolio = () => {
               </ul>
 
               <div className="projects__modal-buttons">
-                <div className="details__project__button">
+                <a
+                  href="https://github.com/x-jirox/mi-portafolio"
+                  className="details__project__button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                   <i className="uil uil-github projects__button-icon"></i>
-                </div>
+                </a>
 
-                <div className="details__project__button">
+                <a
+                  href="https://portafolio-lenin-correa.netlify.app/about-me"
+                  className="details__project__button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live demo
                   <i className="uil uil-link-h projects__button-icon"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>
