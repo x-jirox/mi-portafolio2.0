@@ -1,9 +1,9 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/CV.pdf";
+import AboutImg from "../../assets/media/about.jpg";
+import CV from "../../assets/documents/CV.pdf";
 import Info from "./info";
-import { ReactComponent as Files } from "../../assets/files.svg";
+import { ReactComponent as Files } from "../../assets/media/files.svg";
 import Qualification from "./qualification";
 const About = () => {
   return (

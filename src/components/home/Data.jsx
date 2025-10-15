@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Hand } from "../../assets/hand.svg";
-import { ReactComponent as Send } from "../../assets/send.svg";
+import { ReactComponent as Hand } from "../../assets/media/hand.svg";
+import { ReactComponent as Send } from "../../assets//media/send.svg";
 
 const Data = () => {
   return (
