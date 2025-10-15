@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Scroll } from "../../assets/scroll.svg";
+import { ReactComponent as Scroll } from "../../assets//media/scroll.svg";
 
 const Scrolldown = () => {
   return (

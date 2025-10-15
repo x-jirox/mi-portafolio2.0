@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
-import { ReactComponent as Send } from "../../assets/send.svg";
+import { ReactComponent as Send } from "../../assets/media/send.svg";
 
 const Contact = () => {
   const form = useRef();
