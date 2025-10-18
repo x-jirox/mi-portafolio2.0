@@ -8,6 +8,7 @@ import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Scrollup from './components/scrollup/scrollup';
 import Portfolio from './components/portfolio/portfolio';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -18,11 +19,12 @@ function App() {
         <About />
         <Skills />
         <Services />
-        <Portfolio/>
+        <Portfolio />
         <Contact />
       </main>
       <Footer />
       <Scrollup />
+      <SpeedInsights />
     </>
   );
 }
